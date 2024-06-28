@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import { IoPrismOutline } from "react-icons/io5";
 const Navbar = () => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -16,9 +16,10 @@ const Navbar = () => {
 
 	return (
 		<>
-			<header className='sticky top-0 left-0 w-full z-20 flex items-center justify-between lg:px-24 md:px-16 sm:px-12 px-4 py-6 shadow-[rgba(149,157,165,0.2)_0px_8px_24px] bg-white'>
-				<div className='logo'>
-					<Link to='/' className='font-semibold text-lg'>PicPrism</Link>
+			<header className='sticky top-0 left-0 w-full z-20 flex items-center justify-between lg:px-24 md:px-16 sm:px-12 px-4 py-6 shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] bg-white'>
+				<div className='logo flex '>
+					<Link to='/' className='font-semibold text-lg flex gap-2 items-center justify-center'>
+					<IoPrismOutline size={22} />PicPrism</Link>
 				</div>
 				<nav className='hidden md:flex'>
 					<div className='flex space-x-4'>
