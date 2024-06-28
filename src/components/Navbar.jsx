@@ -79,6 +79,9 @@ const Navbar = () => {
 					))}
 				</nav>
 			</div>
+
+			{/* footer section */}
+			
 		</>
 	);
 };
