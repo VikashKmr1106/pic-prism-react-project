@@ -8,6 +8,7 @@ import Signup from './pages/Signup';
 import SellerDashboard from './pages/SellerDashboard';
 import BuyerDashboard from './pages/BuyerDashboard';
 import Navbar from './components/Navbar';
+// import HeroSection from './components/HeroSection';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Navbar/>
          <Routes>
             <Route path='/' element={<Home/>} />
+            {/* <Route path='/' element={<HeroSection/>} /> */}
             <Route path='/login' element={<Login/>} />
             <Route path='/signup' element={<Signup/>} />
             <Route path='/seller/profile' element={<SellerDashboard/>} />
