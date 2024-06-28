@@ -8,6 +8,7 @@ import Signup from './pages/Signup';
 import SellerDashboard from './pages/SellerDashboard';
 import BuyerDashboard from './pages/BuyerDashboard';
 import Navbar from './components/Navbar';
+import Footer from './pages/Footer';
 // import HeroSection from './components/HeroSection';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path='/seller/profile' element={<SellerDashboard/>} />
             <Route path='/buyer/profile' element={<BuyerDashboard/>} />
          </Routes>
+      <Footer/>   
       </BrowserRouter>
     </>
   )
